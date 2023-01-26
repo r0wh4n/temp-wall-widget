@@ -3,14 +3,6 @@ This script is a weather app that uses the Tkinter library to create a GUI for t
 
 Additionally, it also changes the wallpaper of the desktop based on the current weather condition. It does this by calling the gsettings command to change the desktop background picture URI to the corresponding wallpaper file path. The script supports several different weather conditions such as "Clear", "Clouds", "Snow", "Rain", "Sunny", "Haze", "Smoke" and "Mist".
 
-# Libraries Used
-tkinter library
-requests library
-ctypes library
-os library
-time library
-platform library
-
 # To Run
 python3 widget.py
 
@@ -19,10 +11,12 @@ Weather information is retrieved from OpenWeatherMap using the Current Weather D
 
 # Wallpaper Changing
 The application changes the desktop wallpaper based on the current weather conditions. Wallpaper images are obtained from Unsplash.
+
 The application has been tested on Ubuntu and Windows 10.
 
 # Known Issues
-Wallpaper changing feature is not compatible with MacOS
+Wallpaper changing feature is not compatible with MacOS. 
+
 Application may not work properly with other desktop environments.
 
 # Contribution

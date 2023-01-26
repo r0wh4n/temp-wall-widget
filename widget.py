@@ -10,7 +10,7 @@ if platform.system() == "Windows":
 
     def getWeather(canvas):
         city = textField.get()
-        api = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=793fbe99a4b8fe92defaece269192aaf"
+        api = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid={API_KEY}"
     
 # Get JSON data from API
         json_data = requests.get(api).json()
@@ -76,7 +76,7 @@ if platform.system() == "Windows":
 else:
     def getWeather(canvas):
         city = textField.get()
-        api = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=793fbe99a4b8fe92defaece269192aaf"
+        api = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid={API_KEY}"
     
         json_data = requests.get(api).json()
         condition = json_data['weather'][0]['main']
